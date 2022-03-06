@@ -1,0 +1,6 @@
+framework module Pods_AppWebKit20220306_AppWebKit20220306UITests {
+  umbrella header "Pods-AppWebKit20220306-AppWebKit20220306UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
