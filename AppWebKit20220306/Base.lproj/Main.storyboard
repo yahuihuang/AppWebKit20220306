@@ -24,28 +24,59 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Zi-6e-KFG">
+                                <rect key="frame" x="10" y="44" width="324" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="lkY-YI-5eP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1B-kv-Ibw">
+                                <rect key="frame" x="344" y="44" width="60" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WOm-vB-IPn"/>
+                                    <constraint firstAttribute="height" constant="34" id="tdX-JT-lpq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GO">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cDH-gx-Vsu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
+                            <constraint firstItem="8Zi-6e-KFG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4Fz-Ja-vAZ"/>
                             <constraint firstItem="vmQ-aN-H3n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="7iv-ik-5Il"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vmQ-aN-H3n" secondAttribute="trailing" constant="10" id="Jhv-h2-YiK"/>
+                            <constraint firstAttribute="trailing" secondItem="P1B-kv-Ibw" secondAttribute="trailing" constant="10" id="KbS-E0-DhQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vmQ-aN-H3n" secondAttribute="bottom" constant="30" id="Z1f-7H-25T"/>
+                            <constraint firstItem="P1B-kv-Ibw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d3H-82-Z8Z"/>
+                            <constraint firstItem="8Zi-6e-KFG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dfR-S7-g7g"/>
                             <constraint firstItem="vmQ-aN-H3n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="it2-YP-iSP"/>
+                            <constraint firstItem="P1B-kv-Ibw" firstAttribute="leading" secondItem="8Zi-6e-KFG" secondAttribute="trailing" constant="10" id="zfs-kN-cQa"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="goButton" destination="P1B-kv-Ibw" id="50c-Xm-Nmp"/>
                         <outlet property="myWebView" destination="vmQ-aN-H3n" id="y6v-iU-pVp"/>
+                        <outlet property="urlInput" destination="8Zi-6e-KFG" id="zNL-Fi-Mfr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13" y="40"/>
+            <point key="canvasLocation" x="-13.043478260869566" y="39.508928571428569"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
